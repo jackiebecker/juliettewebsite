@@ -1,0 +1,301 @@
+ul.navbar-top .reveal {
+  display: none;
+}
+ul.navbar-top .collapse {
+  display: inline;
+}
+
+ul.navbar-top a {
+  text-decoration: none;
+}
+ul.navbar-top {
+  position: relative;
+  z-index: 99999;
+  width: 100%;
+  text-align: left;
+  font-size: 0;
+  line-height: 0;
+  font-family: "futura-pt";
+  padding: 0;
+}
+ul.navbar-top b, ul.navbar-top strong, ul.navbar-top b *, ul.navbar-top strong * {
+  font-weight: 700;
+}
+ul.navbar-top:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul.navbar-top li, ul.navbar-top a {
+  display: inline-block;
+}
+
+ul.navbar-top li {
+  float: right;
+}
+
+ul.navbar-top li#nav-company {
+  float: left;
+}
+ul.navbar-top li#nav-company a {
+  font-size: 24px;
+  line-height: 14px;
+}
+
+ul.navbar-top, ul.navbar-top a {
+  background-color: #000;
+}
+
+.pretty ul.navbar-top, .pretty ul.navbar-top a {
+  background-color: #2d112b;
+}
+.pretty.launch ul.navbar-top, .pretty.launch ul.navbar-top a {
+  background-color: #000; /* #051115 */
+}
+
+.pretty.faq ul.navbar-top, .pretty.faq ul.navbar-top a {
+  background-color: #FF6C3F;
+}
+
+ul.navbar-top a {
+  color: #F3F1E9;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 14px;
+  text-transform: uppercase;
+}
+.index ul.navbar-top a {
+  color: #F3F1E9;
+}
+.pretty ul.navbar-top a {
+  color: #deb53b;
+}
+.pretty.faq ul.navbar-top a {
+  color: #2D112D;
+}
+
+ul.navbar-top li.current a, ul.navbar-top li.current a:hover {
+  background-color: #9e9e9e;
+  color: #000;
+}
+
+.pretty ul.navbar-top {
+  position: absolute;
+  top: 0;
+}
+
+.pretty.faq ul.navbar-top {
+  margin-bottom: 0;
+}
+
+ul.navbar-top a:hover {
+  background-color: #44433E;
+  text-decoration: none;
+  border: 0;
+}
+
+.pretty ul.navbar-top a:hover {
+  background-color: #530031;
+}
+.pretty.launch ul.navbar-top a:hover {
+  background-color: #196767;
+}
+
+.pretty.faq ul.navbar-top a:hover {
+  background-color: #C8512C;
+}
+
+@media only screen and (max-width: 770px) {
+  ul.navbar-top .reveal {
+    display: inline;
+  }
+  ul.navbar-top .collapse {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding-bottom: 200px !important;
+  }
+  
+  ul.navbar-top li, ul.navbar-top li#nav-company {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  ul.navbar-top a {
+    float: none;
+    display: block;
+  }
+  ul.navbar-top {
+    position: absolute;
+    bottom: 0;
+    counter-reset: c 6;
+  }
+
+  .pretty ul.navbar-top {
+    top: initial;
+  }
+}
+
+.background {
+  margin-top: 15%;
+  margin-left: 27%;
+  width:45%;
+  height:400px;
+  background-color: rgba(255, 255, 255, .15);
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  font-size: 22px;
+  overflow:scroll;
+}
+
+.background a{
+  color: white;
+}
+
+.background a:hover {
+  color: #deb53b;
+}
+
+tab1 {
+  padding-left: 1em;
+}
+
+/******* CLOUDS *********/
+/* =========================================================================== 
+This copyright notice must be kept untouched in the stylesheet at all times.
+The original version of this stylesheet and the associated (x)html 
+is available at http://www.script-tutorials.com/night-sky-with-twinkling-stars/
+Copyright (c) Script Tutorials. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
+============================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color:rgba(33, 33, 33, 0.9);
+    color:#ffffff;
+    display:block;
+    font: 14px/1.3 Arial,sans-serif;
+    height:50px;
+    position:relative;
+    z-index:5;
+}
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
+header h2{
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
+    text-align: center;
+}
+header a, a:visited {
+    text-decoration:none;
+    color:#fcfcfc;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(images/stars.png) repeat top center;
+  z-index:-3;
+}
+
+.twinkling{
+  background:transparent url(images/twinkling.png) repeat top center;
+  z-index:-2;
+
+  -moz-animation:move-twink-back 600s linear infinite;
+  -ms-animation:move-twink-back 600s linear infinite;
+  -o-animation:move-twink-back 600s linear infinite;
+  -webkit-animation:move-twink-back 600s linear infinite;
+  animation:move-twink-back 600s linear infinite;
+}
+
+.clouds{
+    background:transparent url(images/clouds3.png) repeat top center;
+    z-index:-1;
+
+  -moz-animation:move-clouds-back 250s linear infinite;
+  -ms-animation:move-clouds-back 250s linear infinite;
+  -o-animation:move-clouds-back 250s linear infinite;
+  -webkit-animation:move-clouds-back 250s linear infinite;
+  animation:move-clouds-back 250s linear infinite;
+}
+
+.main {
+  margin-top: 27%;
+  margin-left: -2%;
+  color: #ffffff;
+  z-index: 4;
+}
+
+.front {
+  padding-top: 45px;
+  color: #ffffff;
+  z-index: 4;
+}
+
+.box {
+	background-color: rgba(77, 128, 128, 0.6);
+	z-index: 3;
+	border: #000 3px;
+	margin-top: 14%;
+	width: 600px;
+    height: 400px;
+    margin-left: 28%;
+}

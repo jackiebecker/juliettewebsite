@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="MainController">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Juliette Becker</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <!--external css-->
+  <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />  
+
+  <!-- Custom styles for this template -->
+  <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script src="MainController.js"></script>
+		 
+</head>
+
+<body>
+<body class="pretty launch">
+				<ul class="navbar-top">
+			<li id="nav-company"><a href="/"><strong>Juliette Becker</strong></a></li>
+			<!-- THESE MUST GO IN REVERSE ORDER BECAUSE CSS IS DUMB SOMETIMES -->
+			<li id="nav-cv"><a href="#cv"><strong><span class="collapse">CV</span><span class="reveal">CV</span></strong></a></li>
+			<li id="nav-data"><a href="#data"><strong><span class="collapse">Data</strong></a></li>
+			<li id="nav-research"><a href="#research"><strong><span class="collapse">Research</strong></a></li>
+			<li id="nav-research"><a href="#about"><strong><span class="collapse">About Me</strong></a></li>
+		</ul>
+
+		<div id="page">
+			<div class="stars"></div>
+    		<div class="twinkling"></div>
+    		<div class="clouds"></div>
+
+			<div ng-view></div>
+
+		<div>
+
+
+</body>
+</html>
